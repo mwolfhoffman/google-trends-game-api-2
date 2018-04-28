@@ -44,7 +44,7 @@ import * as passportConfig from "./config/passport";
 const app = express();
 
 //  TODO: use whitelist for cors
-var whitelist = ['http://localhost:4200', 'googletrendsclient2.herokuapp.com']
+var whitelist = ['http://localhost:4200', 'http://googletrendsclient2.herokuapp.com', 'https://googletrendsclient2.herokuapp.com']
 var corsOptionsDelegate = function (req: any, callback: any) {
   var corsOptions;
   if (whitelist.indexOf(req.header('Origin')) !== -1) {
